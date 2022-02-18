@@ -1,0 +1,11 @@
+{
+    
+    "server": {
+      "port": ":5055"
+    },
+    "database": {    
+      "writer": {
+        "url": "admin:admin@tcp(mysql:3306)/teste?charset=utf8mb4,utf8\u0026readTimeout=30s\u0026writeTimeout=30s"
+      }
+    }
+  }

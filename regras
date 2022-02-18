@@ -1,0 +1,7 @@
+
+- Ao realizar um POST e/ou PUT deve ser enviado apenas o "Estoque Total" e
+"Estoque de Corte", mas a aplicação precisa calcular e salvar no "Estoque
+Disponível" o resultado do "Estoque Total" - "Estoque Disponível";
+- O Preço De não pode ser inferior ao Preço Por;
+- Precisamos "auditar" as informações, ou seja, precisamos ver data e hora das
+transações no banco de dados;

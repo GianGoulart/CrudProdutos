@@ -1,0 +1,25 @@
+version: '3.4'
+services: 
+  mysql:
+    image: mysql
+    container_name: mysql
+    platform: linux/amd64
+    ports: 
+      - 3306:3306
+    environment:       
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=admin
+      - MYSQL_DATABASE=teste
+      - MYSQL_ROOT_PASSWORD=admin
+    volumes:
+      - ./mysql:/var/lib/mysql
+  app:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    image: golang
+    container_name: app-container
+    ports:
+      - 5055:5055
+    depends_on:
+      - mysql
