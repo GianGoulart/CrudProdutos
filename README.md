@@ -13,15 +13,18 @@ e depois pra subir a aplicação
 # CURL`s
 
 GET- Todos os Produtos
-```curl --location --request GET 'http://localhost:5055/produtos'
+```
+curl --location --request GET 'http://localhost:5055/produtos'
 ```
 
 GET- Busca produto pelo codigo
-```curl --location --request GET 'http://localhost:5055/produtos/:codigo'
+```
+curl --location --request GET 'http://localhost:5055/produtos/:codigo'
 ```
 
 POST- Busca produto pelo nome
-```curl --location --request POST 'http://localhost:5055/produtos/produtosByNome' \
+```
+curl --location --request POST 'http://localhost:5055/produtos/produtosByNome' \
 --header 'Content-Type: application/json' \
 --data-raw '{
         "nome": "TV"
@@ -29,7 +32,8 @@ POST- Busca produto pelo nome
 ```
 
 POST- Criar produto 
-```curl --location --request POST 'http://localhost:5055/produtos' \
+```
+curl --location --request POST 'http://localhost:5055/produtos' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "nome": "TV SONY",
@@ -41,7 +45,8 @@ POST- Criar produto
 ```
 
 PUT- Alterar produto 
-```curl --location --request PUT 'http://localhost:5055/produtos' \
+```
+curl --location --request PUT 'http://localhost:5055/produtos' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "codigo": "pfpugbto17g9zxis6p8916rcge",
@@ -54,5 +59,6 @@ PUT- Alterar produto
 ```
 
 POST- Deletar produto 
-```curl --location --request DELETE 'http://localhost:5055/produtos/:codigo'
+```
+curl --location --request DELETE 'http://localhost:5055/produtos/:codigo'
 ```
